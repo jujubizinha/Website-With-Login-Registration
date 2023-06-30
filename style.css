@@ -123,15 +123,15 @@ header {
   transform: translateX(-400px);
 }
 
-.wrapper.active .form-box.login {
+.wrapper .form-box.register {
   position: absolute;
   transition: none;
   transform: translateX(400px);
 }
 
-.wrapper.active.form-box.register {
+.wrapper.active .form-box.register {
   transition: transform 0.18s ease;
-  transform: trnaslateX(0);
+  transform: translateX(0);
 }
 
 .wrapper .icon-close {
@@ -167,19 +167,19 @@ header {
 }
 .input-box label {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 5px;
   transform: translateY(-50%);
   font-size: 1em;
   color: #162938;
-  font-weight: 500;
+  font-weight: 100;
   pointer-events: none;
   transition: 0.5s;
 }
 
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
-  top: -5px;
+  top: -500px;
 }
 
 .input-box input {
